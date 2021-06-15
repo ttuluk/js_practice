@@ -1,3 +1,43 @@
+/* let numberValue = 0;
+console.log('тип данных let numberValue:', typeof numberValue);
+console.log('значение переменной let numberValue:', numberValue);
+
+numberValue = NaN;
+console.log('тип данных let numberValue:', typeof numberValue);
+console.log('значение переменной let numberValue:', numberValue);
+
+numberValue = Infinity;
+console.log('тип данных let numberValue:', typeof numberValue);
+console.log('значение переменной let numberValue:', numberValue);
+
+numberValue = 500;
+console.log('тип данных let numberValue:', typeof numberValue);
+console.log('значение переменной let numberValue:', numberValue);
+
+numberValue = true;
+console.log('тип данных let numberValue:', typeof numberValue);
+console.log('значение переменной let numberValue:', numberValue);
+
+const result = 3 + numberValue;
+console.log('тип данных let result:', typeof result);
+console.log('значение переменной let result:', result); */
+
+ const num1 ='2';
+const num2 = 2;
+/*
+let num = num2 % num1;
+console.log('%', num);
+
+num = num2 >= num1;
+console.log(num);
+ */
+let num = num2 === num1;
+console.log(num);
+
+num = num2 == num1;
+console.log(num);
+
+
 /* for (let i = 0; i < 10; i += 1) {
     if (i === 5) {
       console.log('Дошли до 5-й итерации, прерываем цикл!');
@@ -17,7 +57,7 @@
 
  const result = string2.toLowerCase();
  console.log(result.includes(blacklistedWord2)); */
- 
+
  console.log(62&&3&&4&&5&&55);
  console.log(62||5||78||978);
  console.log(!true);
