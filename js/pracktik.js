@@ -111,7 +111,7 @@ else {
 }
 ;*/
 //правильное обЪявление переменной, иначе вывод нужно давать в каждую строку, смотри выше код
-
+/* 
 const ballance = 1000;
 let message;
 
@@ -122,5 +122,46 @@ else {
   message = 'отрицательный баланс'
 }
 console.log(message);
+ */
+/* const valueA = '5';
+console.log(typeof valueA);
+console.log(Number(valueA)); // 5
+console.log(typeof Number(valueA)); // 'number'
+
+const valueB = 'random string';
+console.log(Number(valueB)); // NaN
+console.log(typeof Number(valueB)); // 'number'
+ */
+
+//округление и приведение к числу
+console.log(Number.parseInt('dd5.54px'));
+console.log(Number.parseFloat('5.54452552x37774'));
 
 
+let sum = 0.1 + 0.2;
+sum = (0.1 * 10 + 0.2 * 10) / 10;
+/* sum = Math.floor(sum); */
+console.log(sum);
+sum = (0.1 + 0.2).toFixed(2);
+console.log(sum);
+
+// метод Math
+let numberCeil = 3.1458658;
+numberCeil = Math.ceil(numberCeil);
+console.log(numberCeil);
+
+let numberFloor = 3.999999999;
+numberFloor = Math.floor(numberFloor);
+console.log(numberFloor);
+
+let numberRound = 3.599999999;
+numberRound = Math.round(numberRound);
+console.log(numberRound);
+
+//max и min
+console.log(Math.min(23, 34, 12, 17, 56, 67));
+console.log(Math.max(23, 34, 12, 17, 56, 67));
+
+console.log(Math.pow(2, 4)); //возведение в степень, иначе 2**4
+ //random
+ console.log(Math.ceil(Math.random() * (10 - 1) +1));
