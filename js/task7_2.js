@@ -18,7 +18,24 @@
 const totalSpent = 2000;
 let payment = 500;
 let discount = 0;
+if (payment >= 100 && payment < 1000) {
+    discount = 2;
+    console.log('бронзовый партнёр, скидка 2%');
+}
+else if (payment >= 1000 && payment < 5000) {
+    discount = 5;
+    console.log('серебрянный партрёр, скидка 5%');
+}
+else if (payment >= 5000) {
+    discount = 10;
+    console.log('золотой партрёр, скидка 10%');
+}
+else {
+discount = 0;  
+console.log('не партнёр, скидка 0%');
+}
 
+console.log(`Оформляем заказ на сумму ${payment - ((payment * discount) / 100)} со скидкой ${discount}%`);
 
 // 'Бронзовый партнер, скидка 2%'
 // 'Серебрянный партнер, скидка 5%'
