@@ -22,8 +22,8 @@ const result = 3 + numberValue;
 console.log('тип данных let result:', typeof result);
 console.log('значение переменной let result:', result); */
 
- const num1 ='2';
-const num2 = 2;
+/*  const num1 ='2';
+const num2 = 2; */
 /*
 let num = num2 % num1;
 console.log('%', num);
@@ -31,11 +31,11 @@ console.log('%', num);
 num = num2 >= num1;
 console.log(num);
  */
-let num = num2 === num1;
+/* let num = num2 === num1;
 console.log(num);
 
 num = num2 == num1;
-console.log(num);
+console.log(num); */
 
 
 /* for (let i = 0; i < 10; i += 1) {
@@ -58,7 +58,7 @@ console.log(num);
  const result = string2.toLowerCase();
  console.log(result.includes(blacklistedWord2)); */
 
- console.log(62&&3&&4&&5&&55);
+ /* console.log(62&&3&&4&&5&&55);
  console.log(62||5||78||978);
  console.log(!true);
 
@@ -92,11 +92,11 @@ const subscription = 0;
  else {
   const canAccessContent = null;
   console.log('есть доступ к подписке?', canAccessContent);
- }; 
+ };  */
 /*  const canAccessContent = subscription === v || subscription === p;
  console.log('есть доступ к подписке?', canAccessContent); */
 
-console.log("ToToWe".slice(-2));
+/* console.log("ToToWe".slice(-2)); */
 
 
 /*const ballance = 1000;
@@ -134,19 +134,19 @@ console.log(typeof Number(valueB)); // 'number'
  */
 
 //округление и приведение к числу
-console.log(Number.parseInt('dd5.54px'));
+/* console.log(Number.parseInt('dd5.54px'));
 console.log(Number.parseFloat('5.54452552x37774'));
 
 
 let sum = 0.1 + 0.2;
 sum = (0.1 * 10 + 0.2 * 10) / 10;
 /* sum = Math.floor(sum); */
-console.log(sum);
+/* console.log(sum);
 sum = (0.1 + 0.2).toFixed(2);
-console.log(sum);
+console.log(sum); */ 
 
 // метод Math
-let numberCeil = 3.1458658;
+/* let numberCeil = 3.1458658;
 numberCeil = Math.ceil(numberCeil);
 console.log(numberCeil);
 
@@ -164,4 +164,49 @@ console.log(Math.max(23, 34, 12, 17, 56, 67));
 
 console.log(Math.pow(2, 4)); //возведение в степень, иначе 2**4
  //random
- console.log(Math.ceil(Math.random() * (10 - 1) +1));
+ console.log(Math.ceil(Math.random() * (10 - 1) +1)); */
+
+const clients = ['Mango', 'Ajax', 'Poly'];
+
+for (let i = 0; i < clients.length; i += 1) {
+  console.log('Logging clients: ', clients[i]);
+}
+
+const numbers = [];
+
+for (let i = 0; i < 3; i += 1) {
+  numbers.push(`label-${i}`);
+}
+
+console.log('numbers: ', numbers); // ['label-0', 'label-1', 'label-2']
+
+// Итерация по массиву
+const clientss = ['Mango', 'Ajax', 'Poly'];
+
+for (const client of clientss) {
+  console.log(client);
+}
+
+// Итерация по строке
+const string = 'javascript';
+
+for (const character of string) {
+  console.log(character);
+}
+
+const clients2 = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+
+console.log(clients2.indexOf('Poly')); // 2
+console.log(clients2.indexOf('Monkong')); // -1
+
+const clients3 = ['Mango', 'Ajax', 'Poly', 'Kiwi'];
+
+console.log(clients3.includes('Poly')); // true
+console.log(clients3.includes('Monkong')); // false
+
+const redFruits = ['apple', 'strawberry', 'cherry', 'cranberries'];
+const fruit = 'cherry';
+
+if (redFruits.includes(fruit)) {
+  console.log('It is a red fruit!');
+}
